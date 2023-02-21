@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #484848;
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 30px auto;
+}
+span.icon {
+	width: 45px;
+	height: 45px;
+	display: block;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+h2 {
+	padding: 3px 0;
+}
+
+ul {
+	margin: 3px 0;
+}
+
+span.icon-guest {
+	background-image: url('../images/icon_group.png');
+}
+
+span.icon-room {
+	background-image: url('../images/icon_bed.png');
+}
+
+span.icon-bathroom {
+	background-image: url('../images/icon_bath.png');
+}
+
+.icon-wifi {
+	background-image: url('../images/icon_wifi.png');
+}
+
+.icon-pets {
+	background-image: url('../images/icon_pets.png');
+}
+
+.icon-tv {
+	background-image: url('../images/icon_tv.png');
+}
+
+@media (max-width: 726px) {
+	.container {
+		margin: 30px 10px;
+	}
+}
