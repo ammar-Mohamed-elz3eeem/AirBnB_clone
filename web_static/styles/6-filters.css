@@ -1,0 +1,94 @@
+.filters {
+	background-color: white;
+	height: 70px;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+}
+
+.filters > div {
+	height: 100%;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	justify-content: center;
+	position: relative;
+}
+
+.filters > div:first-of-type {
+	border-right: #dddddd solid 1px;
+}
+
+.filters > div > h3 {
+	font-weight: 600;
+}
+
+.filters > div > h4 {
+	font-weight: 400;
+	font-size: 14px;
+
+}
+
+button {
+	font-size: 18px;
+	background-color: #ff5a5f;
+	color: #ffffff;
+	height: 48px;
+	width: 20%;
+	border: none;
+	border-radius: 4px;
+	margin: 0 30px 0 auto;
+	transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+.popover {
+	background-color: #FAFAFA;
+	position: absolute;
+	left: 0;
+	top: 102%;
+	width: 100%;
+	padding: 20px 0;
+	z-index: 2;
+	border: 1px solid #ddd;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	transition: opacity 0.5s ease-in;
+	border-radius: 4px;
+}
+
+.locations:hover .popover {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+.amenities:hover .popover {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+.popover, .popover ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.popover ul li:not(li:last-of-type) {
+	padding: 5px 0;
+}
+
+.popover > li:not(li:first-of-type) {
+	padding: 20px 0 0 0;
+}
+
+.popover h2 {
+	font-size: 16px;
+}
